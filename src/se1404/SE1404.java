@@ -24,3 +24,21 @@ public class SE1404 {
     }
     
 }
+
+
+//Conclusion: Manually Clean & Build + have ant run Test -> require man-power
+//=> Automatic method: 
+//  Dev push code to Git Server
+//  a tool will watch Git, if change happens
+//  take new code to a local computer
+//  call ant
+//  run test, if return GREEN -> create /.jar/ file
+//  Thus, if Dev push code up, ant return RED, won't be accepted, until ant return GREEN
+//  CI/ continuous Integration
+//  This tool is Jenkins, TeamCity,...
+
+//next step: config Jenkins to work with Git
+//                             work with ant to Clean & Build
+//                             work with JDK to ...
+//                             work with Gmail to sen confirm mail
+//           create jobs/ : build-app schedule

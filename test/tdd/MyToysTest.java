@@ -25,7 +25,7 @@ public class MyToysTest {
 //    In nature, each test case is a function
     @Test //turn a function with JUnit into main function
     public void testSuccessfulLower10Cases() {
-        assertEquals(10, cF(0)); //compare function print GREEN if match, RED if not
+        assertEquals(1, cF(0)); //compare function print GREEN if match, RED if not
         assertEquals(2, cF(2));
         assertEquals(6, cF(3));
         assertEquals(24, cF(4));

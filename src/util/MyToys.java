@@ -18,14 +18,21 @@ public class MyToys {
     public static long cF(int n) {
         if(n<0 || n>15)
             throw new IllegalArgumentException("n must be between 0 - 15");
+        //    Using recursion
+            if(n==0 || n==1)
+                return 1;
+            return n* cF(n-1);
 //        n=0
-        if(n==0)
-            return 1;
+//        if(n==0)
+//            return 1;
 //        n in 1 - 15
-        long product = 1;
-        for (int i = 1; i <= n; i++) {
-            product *= i;
-        }
-        return product;
+
+        
+//        long product = 1;
+//        for (int i = 1; i <= n; i++) {
+//            product *= i;
+//        }
+//        return product;
+
     }
 }
